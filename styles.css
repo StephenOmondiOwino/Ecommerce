@@ -268,7 +268,7 @@ body {
   
   .book-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction:vertical;
     gap: 20px;
     margin: 20px 0;
   }
@@ -327,7 +327,19 @@ body {
     text-align: center;
   }
   .payment-options {
-    display: flex;
+    display: grid;
     gap: 20px;
-    justify-content: center;
+    justify-content:center;
   }
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;}
+    
+      .book-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+    }
